@@ -38,7 +38,15 @@ const page = ({ params }) => {
       filterCards();
     };
     getBoardData();
-  }, [boardId, getToken, userId, setStartupGroups, setCards, filterCards]);
+  }, [
+    boardId,
+    getToken,
+    userId,
+    setStartupGroups,
+    setCards,
+    filterCards,
+    cards,
+  ]);
 
   const handleOnDragEnd = async (result) => {
     const { source, destination, draggableId, type } = result;

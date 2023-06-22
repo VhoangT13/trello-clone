@@ -1,6 +1,3 @@
-"use client";
-
-import { getGroupById } from "@/utils/supabaseGroupRequests";
 import { useAuth } from "@clerk/nextjs";
 import React, { useEffect, useState } from "react";
 
@@ -12,7 +9,6 @@ import useBoardStore from "@/store/boardStore";
 const Group = ({ id, boardId, index }) => {
   const { userId, getToken } = useAuth();
   const [data, setData] = useState(null);
-  const [listCard, setListCard] = useState([]);
 
   const [groups] = useBoardStore((state) => [state.groups]);
 

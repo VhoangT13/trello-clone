@@ -1,5 +1,3 @@
-"use client";
-
 import useBoardStore from "@/store/boardStore";
 import CardTodo from "./CardTodo";
 import { Draggable, Droppable } from "react-beautiful-dnd";

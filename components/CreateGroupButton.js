@@ -1,8 +1,6 @@
-"use client";
 import useBoardStore from "@/store/boardStore";
 import { addGroup } from "@/utils/supabaseGroupRequests";
 import { useAuth } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { BiPlus } from "react-icons/bi";
 
